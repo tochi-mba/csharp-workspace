@@ -9,12 +9,12 @@ namespace HelloCsharp
     internal class Book
     {
         public string title;
-        public string author;
+        private string author;
         public int pages;
 
         public Book(string aTitle, string aAuthor, int aPages) { 
             title = aTitle;
-            author = aAuthor;
+            Author = aAuthor;
             pages = aPages;
         }
 
@@ -32,5 +32,25 @@ namespace HelloCsharp
         {
             return author.Split(" ")[0];
         }
+
+        public string Author
+        {
+            get{
+                return author;
+            }
+            set
+            {
+                if (value.Split(" ").Length > 1)
+                {
+                    author = value;
+                }
+                else
+                {
+                    author = "John Doe";
+                }
+            }
+        }
+
+
     }
 }

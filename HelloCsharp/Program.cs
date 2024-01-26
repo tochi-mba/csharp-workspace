@@ -44,8 +44,9 @@
 using HelloCsharp;
 
 Book book1 = new Book("diary of a wimpy kid", "jeff kiney", 400);
-Book book2 = new Book("BFG", "roald dahl", 100);
+Book book2 = new Book("BFG", "dahl", 100);
 
 Console.WriteLine(book2.IsNovel());
 Console.WriteLine(book1.FirstName());
+Console.WriteLine(book1.Author);
 
