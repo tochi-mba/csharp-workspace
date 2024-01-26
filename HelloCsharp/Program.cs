@@ -1,4 +1,4 @@
-﻿string secret = "lgbtq";
+﻿string secret = "bibby";
 int numOfLives = 3;
 
 Console.WriteLine("You have 3 lives.");
